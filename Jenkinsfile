@@ -17,7 +17,7 @@ pipeline {
                 echo 'logging in to docker hub and pushing image..'
                 withCredentials([usernamePassword(credentialsId:'DockerHub',passwordVariable:'DockerHubPassword', usernameVariable:'DockerHubUsername')]) {
                     sh "docker login -u ${env.DockerHubUsername} -p ${env.DockerHubPassword}"
-                    sh "docker push devabhay/node-todo-labapp-cicd:latest"
+                    sh "docker push devabhay/node-todo-demo-cicd:latest"
                 }    
             }
         }
