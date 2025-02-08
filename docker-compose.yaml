@@ -2,6 +2,6 @@ version: '3.9'
 
 services:
   web:
-   image: devabhay/node-todo-labapp-cicd:latest
+   image: devabhay/node-todo-demo-cicd:latest
    ports:
      - "8000:8000"
